@@ -303,7 +303,7 @@ with col_wc1:
     if len(pos_text) > 10:
         wc_pos = WordCloud(
             width=1200,
-            height=600,
+            height=1600,
             background_color=THEME["background"],
             colormap="viridis"
         ).generate(pos_text)
@@ -327,7 +327,7 @@ with col_wc2:
     if len(neg_text) > 10:
         wc_neg = WordCloud(
             width=1200,
-            height=600,
+            height=1600,
             background_color=THEME["background"],
             colormap="autumn"
         ).generate(neg_text)
@@ -362,5 +362,6 @@ with t1:
 
 with t2:
     st.dataframe(neg, use_container_width=True)
+
 
 
