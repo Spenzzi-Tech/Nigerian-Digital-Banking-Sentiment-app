@@ -62,7 +62,7 @@ COLOR_THEME = {
 
 
 def load_data():
-    df = pd.read_csv("master_df_labeled.csv")
+    df = pd.read_csv("master_df_labeled.zip")
     
     # Ensure Date column is datetime
     if 'Date' in df.columns:
@@ -362,4 +362,5 @@ with t1:
 
 with t2:
     st.dataframe(neg, use_container_width=True)
+
 
